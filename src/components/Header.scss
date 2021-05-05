@@ -8,8 +8,14 @@ header {
   color: white;
   display: flex;
   margin-bottom: -20px;
+  @media (max-width: 460px) {
+    width: 120%;
+  }
+  @media (max-width: 420px) {
+    width: 130%;
+  }
 }
-header > h1 {
+.a > h1 {
   padding: 12px;
   transition: 200ms;
 }
@@ -34,6 +40,12 @@ p {
   min-height: 10vh;
   max-height: 11vh;
   margin-top: -2.4vh;
+  @media (max-width: 460px) {
+    width: 120%;
+  }
+  @media (max-width: 420px) {
+    width: 130%;
+  }
 }
 .container > ul {
   padding-top: 16px;
@@ -41,7 +53,8 @@ p {
   margin-left: 8px;
   margin-right: 8px;
   @media (max-width: 768px) {
-    display: none;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 li {
@@ -51,4 +64,12 @@ li {
   padding-right: 20px;
   font-size: 0.8rem;
   cursor: pointer;
+  @media (max-width: 768px) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+.a {
+  text-decoration: none;
+  color: white;
 }

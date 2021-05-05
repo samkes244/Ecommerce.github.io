@@ -13,7 +13,19 @@ header {
   margin-bottom: -20px;
 }
 
-header > h1 {
+@media (max-width: 460px) {
+  header {
+    width: 120%;
+  }
+}
+
+@media (max-width: 420px) {
+  header {
+    width: 130%;
+  }
+}
+
+.a > h1 {
   padding: 12px;
   -webkit-transition: 200ms;
   transition: 200ms;
@@ -45,6 +57,18 @@ p {
   margin-top: -2.4vh;
 }
 
+@media (max-width: 460px) {
+  .container {
+    width: 120%;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: 130%;
+  }
+}
+
 .container > ul {
   padding-top: 16px;
   display: -webkit-box;
@@ -56,7 +80,8 @@ p {
 
 @media (max-width: 768px) {
   .container > ul {
-    display: none;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -67,5 +92,17 @@ li {
   padding-right: 20px;
   font-size: 0.8rem;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  li {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.a {
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=Header.css.map */

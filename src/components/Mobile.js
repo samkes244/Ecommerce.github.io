@@ -1,6 +1,6 @@
 import React from "react";
 import "./Product.css";
-
+import { NavLink } from "react-router-dom";
 const Mobile = () => {
   const movies = [
     {
@@ -13,60 +13,45 @@ const Mobile = () => {
 
   return (
     <div>
-      {movies ? (
-        movies.map((movie) => (
+      {movies.map((movie) => (
+        <div>
           <div className="product">
-            <div>
-              <div className="border">
-                <h2>{movie.name}</h2>
-                <img className="images" src={movie.img} alt="" />
-                <strong>
-                  <p>{movie.price}</p>
-                </strong>
-                <p>{movie.Rating}</p>
-                <button>See Items</button>
-              </div>
+            <div className="border">
+              <h2>{movie.name}</h2>
+              <img className="images" src={movie.img} alt="" />
+              <strong>
+                <p>{movie.price}</p>
+              </strong>
+              <p>{movie.Rating}</p>
+              <NavLink className="button" to="/Mobile-Details">
+                See Items
+              </NavLink>
             </div>
-            <div>
-              <div className="border">
-                <h2>{movie.name}</h2>
-                <img className="images" src={movie.img} alt="" />
-                <strong>
-                  <p>{movie.price}</p>
-                </strong>
-                <p>{movie.Rating}</p>
-                <button>See Items</button>
-              </div>
+            <div className="border">
+              <h2>{movie.name}</h2>
+              <img className="images" src={movie.img} alt="" />
+              <strong>
+                <p>{movie.price}</p>
+              </strong>
+              <p>{movie.Rating}</p>
+              <NavLink className="button" to="/Mobile-Details">
+                See Items
+              </NavLink>
             </div>
-            <div>
-              <div className="border">
-                <h2>{movie.name}</h2>
-                <img className="images" src={movie.img} alt="" />
-                <strong>
-                  <p>{movie.price}</p>
-                </strong>
-                <p>{movie.Rating}</p>
-                <button>See Items</button>
-              </div>
-            </div>
-            <div>
-              <div className="border">
-                <h2>{movie.name}</h2>
-                <img className="images" src={movie.img} alt="" />
-                <strong>
-                  <p>{movie.price}</p>
-                </strong>
-                <p>{movie.Rating}</p>
-                <button>See Items</button>
-              </div>
+            <div className="border">
+              <h2>{movie.name}</h2>
+              <img className="images" src={movie.img} alt="" />
+              <strong>
+                <p>{movie.price}</p>
+              </strong>
+              <p>{movie.Rating}</p>
+              <NavLink className="button" to="/Mobile-Details">
+                See Items
+              </NavLink>
             </div>
           </div>
-        ))
-      ) : (
-        <div>
-          <h1>Loading...</h1>
         </div>
-      )}
+      ))}
     </div>
   );
 };

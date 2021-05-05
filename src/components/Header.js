@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
@@ -6,7 +7,9 @@ function Header() {
   return (
     <div className="header">
       <header>
-        <h1>VivKart</h1>
+        <NavLink to="/" className="a">
+          <h1>VivKart</h1>
+        </NavLink>
         <nav>
           <p>Sign In</p>
           <p>Sign Up</p>
@@ -15,13 +18,18 @@ function Header() {
       <div className="container">
         <span className="menu"></span>
         <ul>
-          <li>Best Sellers</li>
-          <li>Mobile</li>
-          <li>Appliances</li>
-          <li>Kitchen</li>
-          <li>Books</li>
-          <li>Sell</li>
-          <li>Computers</li>
+          <NavLink className="a" to="/">
+            <li>Best Sellers</li>
+          </NavLink>
+          <NavLink className="a" to="/Mobile">
+            <li>Mobile</li>
+          </NavLink>
+          <NavLink className="a" to="/Kitchen">
+            <li>Kitchen</li>
+          </NavLink>
+          <NavLink className="a" to="/Books">
+            <li>Books</li>
+          </NavLink>
         </ul>
       </div>
     </div>

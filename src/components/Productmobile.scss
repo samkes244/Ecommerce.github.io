@@ -1,9 +1,21 @@
 .product-mobile > img {
-  width: 80%;
-  flex: 60%;
+  width: 100%;
+  @media (max-width: 768px) {
+    min-width: 40%;
+    max-width: 50%;
+  }
+}
+.bigger {
+  margin-left: 80px;
+  margin-right: 70px;
+  @media (max-width: 768px) {
+  }
 }
 .content-holder {
   display: flex;
+  @media (max-width: 768px) {
+    display: grid;
+  }
 }
 .content-holder > h2 {
   flex: 40%;

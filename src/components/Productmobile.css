@@ -1,14 +1,30 @@
 .product-mobile > img {
-  width: 80%;
-  -webkit-box-flex: 60%;
-      -ms-flex: 60%;
-          flex: 60%;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .product-mobile > img {
+    min-width: 40%;
+    max-width: 50%;
+  }
+}
+
+.bigger {
+  margin-left: 80px;
+  margin-right: 70px;
 }
 
 .content-holder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 768px) {
+  .content-holder {
+    display: -ms-grid;
+    display: grid;
+  }
 }
 
 .content-holder > h2 {
