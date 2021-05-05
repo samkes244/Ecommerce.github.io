@@ -1,0 +1,37 @@
+.product-mobile > img {
+  width: 80%;
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
+}
+
+.content-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-holder > h2 {
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
+  margin-left: 40px;
+}
+
+.content-holder > p {
+  margin-top: 30vh;
+}
+
+.purchase {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.purchase-btn {
+  background-color: #f6bd60;
+  margin: 4px;
+  cursor: pointer;
+  height: 6vh;
+  width: 60%;
+}
+/*# sourceMappingURL=Productmobile.css.map */

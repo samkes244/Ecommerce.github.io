@@ -1,0 +1,71 @@
+.header {
+  margin-bottom: 60px;
+}
+
+header {
+  background-size: cover;
+  background-color: #202020;
+  width: 100%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: -20px;
+}
+
+header > h1 {
+  padding: 12px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 3%;
+  right: 4%;
+}
+
+p {
+  margin-left: 8px;
+  padding: 8px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.container {
+  background-color: #14213d;
+  background-position: top;
+  width: 100%;
+  background-size: cover;
+  min-height: 10vh;
+  max-height: 11vh;
+  margin-top: -2.4vh;
+}
+
+.container > ul {
+  padding-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .container > ul {
+    display: none;
+  }
+}
+
+li {
+  list-style: none;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Header.css.map */

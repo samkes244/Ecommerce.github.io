@@ -1,0 +1,26 @@
+.product-mobile > img {
+  width: 80%;
+  flex: 60%;
+}
+.content-holder {
+  display: flex;
+}
+.content-holder > h2 {
+  flex: 40%;
+  margin-left: 40px;
+}
+.content-holder > p {
+  margin-top: 30vh;
+}
+.purchase {
+  //   height: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.purchase-btn {
+  background-color: #f6bd60;
+  margin: 4px;
+  cursor: pointer;
+  height: 6vh;
+  width: 60%;
+}

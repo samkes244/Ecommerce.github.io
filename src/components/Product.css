@@ -1,0 +1,50 @@
+.images {
+  min-width: 70%;
+  max-width: 80%;
+}
+
+@media (max-width: 768px) {
+  .images {
+    min-width: 40%;
+    max-width: 50%;
+  }
+}
+
+h2 {
+  margin-left: 22px;
+}
+
+.border {
+  border: 0.9px solid #eee;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+@media (max-width: 768px) {
+  .border {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+.product {
+  margin-left: 40px;
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .product {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+button {
+  width: 100%;
+}
+/*# sourceMappingURL=Product.css.map */
