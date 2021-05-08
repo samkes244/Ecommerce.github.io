@@ -1,13 +1,9 @@
-import React from "react";
+import React, { useContext,useState } from "react";
 import "./Productmobile.css";
+import { Context } from "./Context";
 
 function Productmobile() {
-  const purchase = (
-    <div className="purchase">
-      <button className="purchase-btn">Buy Now</button>
-      <button className="purchase-btn">Add To cart</button>
-    </div>
-  );
+  const { counter, pricing,setCounter,setPrice,price } = useContext(Context);
   const ratings = <p>Ratings: ⭐⭐⭐⭐⭐</p>;
   return (
     <div className="product-mobile">
@@ -16,8 +12,20 @@ function Productmobile() {
         <h2>
           Redmi Note 10 (Shadow Black, 4GB RAM, 64GB Storage)
           {ratings}
-          {purchase}
+          <button
+            className="purchase-btn"
+            onClick={() => {
+              setCounter(counter +1); }}
+              
+           onChange={() => {
+               setPrice(true) ;
+            }}
+          >
+            Add To cart
+          </button>
+          <button className="purchase-btn">Buy Now</button>
         </h2>
+
       </div>
     </div>
   );

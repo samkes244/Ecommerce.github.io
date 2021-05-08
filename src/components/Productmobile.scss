@@ -30,9 +30,21 @@
   margin-right: 20px;
 }
 .purchase-btn {
-  background-color: #f6bd60;
-  margin: 4px;
-  cursor: pointer;
-  height: 6vh;
-  width: 60%;
+  outline: none;
+  font-size: calc(13px + 0.7vw);
+  text-decoration: none;
+  width: 60vw;
+  height: 10vh;
+  padding: 4px 4px 4px 4px;
+  margin-left: 4px;
+  margin-right: 4px;
+  border: 2px solid #ecc500;
+  padding: 3px;
+  font-weight: 999;
+  background-color: #ffe66d;
+}
+h2 {
+  font-size: calc(28px+9vw);
+}
+p {
 }

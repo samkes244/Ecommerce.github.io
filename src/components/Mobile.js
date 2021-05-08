@@ -1,44 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Product.css";
 import { NavLink } from "react-router-dom";
-const Mobile = () => {
-  const movies = [
-    {
-      name: "Redmi Note 10",
-      img: "https://m.media-amazon.com/images/I/41atHSWSGaL.jpg",
-      price: "$160",
-      Rating: "⭐⭐⭐⭐⭐",
-    },
-  ];
+import { Context } from "./Context";
 
+const Mobile = () => {
+  const { movies } = useContext(Context);
   return (
-    <div>
+    <div className="proup">
       {movies.map((movie) => (
         <div>
           <div className="product">
-            <div className="border">
-              <h2>{movie.name}</h2>
-              <img className="images" src={movie.img} alt="" />
-              <strong>
-                <p>{movie.price}</p>
-              </strong>
-              <p>{movie.Rating}</p>
-              <NavLink className="button" to="/Mobile-Details">
-                See Items
-              </NavLink>
-            </div>
-            <div className="border">
-              <h2>{movie.name}</h2>
-              <img className="images" src={movie.img} alt="" />
-              <strong>
-                <p>{movie.price}</p>
-              </strong>
-              <p>{movie.Rating}</p>
-              <NavLink className="button" to="/Mobile-Details">
-                See Items
-              </NavLink>
-            </div>
-            <div className="border">
+            <div className="border_mobile">
               <h2>{movie.name}</h2>
               <img className="images" src={movie.img} alt="" />
               <strong>

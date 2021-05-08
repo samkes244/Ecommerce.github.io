@@ -1,18 +1,28 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
+import { Context } from "./Context";
 
 function Header() {
-  // const [state, setState] = useState(false);
+  const { counter, counterMoney, counterCoins } = useContext(Context);
+
   return (
     <div className="header">
       <header>
         <NavLink to="/" className="a">
-          <h1>VivKart</h1>
+          <h1 className="logo">VivKart</h1>
         </NavLink>
         <nav>
-          <p>Sign In</p>
-          <p>Sign Up</p>
+          <NavLink className="aa" to="/cart">
+            <strong>
+              <p>
+                Cart
+                <span className="cart_circle">
+                  {counter + counterMoney + counterCoins}
+                </span>
+              </p>
+            </strong>
+          </NavLink>
         </nav>
       </header>
       <div className="container">

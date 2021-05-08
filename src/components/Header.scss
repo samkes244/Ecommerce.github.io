@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 .header {
   margin-bottom: 60px;
 }
@@ -8,11 +9,8 @@ header {
   color: white;
   display: flex;
   margin-bottom: -20px;
-  @media (max-width: 460px) {
-    width: 120%;
-  }
-  @media (max-width: 420px) {
-    width: 130%;
+  @media (max-width: 481px) {
+    width: 150%;
   }
 }
 .a > h1 {
@@ -20,10 +18,14 @@ header {
   transition: 200ms;
 }
 nav {
-  display: flex;
   position: absolute;
   top: 3%;
-  right: 4%;
+  right: 0.2%;
+  @media (max-width: 400px) {
+    position: absolute;
+    top: 3%;
+    right: -40%;
+  }
 }
 p {
   margin-left: 8px;
@@ -34,17 +36,13 @@ p {
 .container {
   background-color: #14213d;
   background-position: top;
-  width: 100%;
-
+  width: 100vw;
+  max-height: 12vw;
+  min-height: 10vw;
   background-size: cover;
-  min-height: 10vh;
-  max-height: 11vh;
   margin-top: -2.4vh;
-  @media (max-width: 460px) {
-    width: 120%;
-  }
-  @media (max-width: 420px) {
-    width: 130%;
+  @media (max-width: 481px) {
+    width: 150%;
   }
 }
 .container > ul {
@@ -62,7 +60,7 @@ li {
   color: white;
   padding-left: 20px;
   padding-right: 20px;
-  font-size: 0.8rem;
+  font-size: calc(15px + 0.9vw);
   cursor: pointer;
   @media (max-width: 768px) {
     padding-left: 12px;
@@ -72,4 +70,22 @@ li {
 .a {
   text-decoration: none;
   color: white;
+}
+.cart_circle {
+  width: 20vw;
+  margin-left: 2px;
+  padding: 2px;
+  height: 100vh;
+  border-radius: 30px;
+  background-color: white;
+  color: black !important;
+}
+.aa {
+  text-decoration: none;
+  color: white;
+}
+.logo {
+  font-family: "Lobster", cursive;
+  color: #ffb703;
+  font-size: calc(22px + 1vw);
 }

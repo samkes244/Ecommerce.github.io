@@ -1,0 +1,163 @@
+.cart {
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.ch {
+  margin-top: 4vh;
+}
+
+h2 {
+  font-size: calc(14px + 1vw);
+}
+
+.cart_head_storing {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding-left: 50px;
+  border-radius: 5px;
+  padding-right: 50px;
+  padding-top: 20px;
+  width: 80%;
+}
+
+.images {
+  width: 40%;
+  height: 40%;
+}
+
+@media (max-width: 768px) {
+  .images {
+    min-width: 40%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 420px) {
+  .images {
+    min-width: 70%;
+    max-width: 80%;
+  }
+}
+
+.border_cart {
+  margin-top: 3vh;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 2px;
+}
+
+.product_cart {
+  min-height: 80%;
+  max-height: 100%;
+  min-width: 90%;
+  max-width: 100%;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+@media (max-width: 768px) {
+  .product_cart {
+    height: 100%;
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .product_cart {
+    margin-bottom: 8vh;
+  }
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .product {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+.butto {
+  outline: none;
+  border: none;
+  font-size: calc(13px + 0.7vw);
+  font-weight: 999;
+  background-color: #ffe66d;
+}
+
+.butto {
+  text-decoration: none;
+  width: 30vw;
+  padding: 3px;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .butto {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .butto {
+    width: 100%;
+    margin-bottom: 140px;
+    height: 10vh;
+  }
+}
+
+.components {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.in {
+  height: 100%;
+  padding: 4px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 999;
+}
+
+.imagess {
+  min-width: 40%;
+  max-width: 60%;
+  min-height: 70%;
+  max-height: 80%;
+}
+
+@media (max-width: 420px) {
+  .imagess {
+    min-width: 40%;
+    max-width: 80%;
+    min-height: 30%;
+    max-height: 50%;
+  }
+}
+
+.order {
+  margin-top: 10vh;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order > span {
+  padding: 2px;
+  color: #43aa8b;
+}
+/*# sourceMappingURL=Cart.css.map */
