@@ -6,21 +6,35 @@ import { Context } from "./Context";
 const Mobile = () => {
   const { movies } = useContext(Context);
   return (
-    <div className="proup">
+    <div className="product">
       {movies.map((movie) => (
-        <div>
-          <div className="product">
-            <div className="border_mobile">
-              <h2>{movie.name}</h2>
-              <img className="images" src={movie.img} alt="" />
-              <strong>
-                <p>{movie.price}</p>
-              </strong>
-              <p>{movie.Rating}</p>
-              <NavLink className="button" to="/Mobile-Details">
-                See Items
+        <div className="product_container">
+          <div className="product_image">
+            <img src={movie.img} alt="" />
+          </div>
+          {/* <div className="product_head">
+            <h2 className="heading">{movie.name}</h2>
+          </div> */}
+          <div className="product_desc">
+            <p>
+              <strong>{movie.name}</strong> Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Explicabo
+            </p>
+          </div>
+          <div className="product_ratings">
+            <p>{movie.Rating}</p>
+          </div>
+          <div className="product_price">
+            <strong>
+              <p>{movie.price}</p>
+            </strong>
+          </div>
+          <div className="product_btn">
+            <button>
+              <NavLink className="btn-product" to="/mobile-details">
+                See Item
               </NavLink>
-            </div>
+            </button>
           </div>
         </div>
       ))}

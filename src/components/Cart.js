@@ -24,23 +24,26 @@ function Cart() {
   } = useContext(Context);
   return (
     <div className="cart">
+      {/* This is for mobile */}
       <div className="cart_head_storing">
         <div className="cart_item_length">
           <h3>Items chosen: {counterCoins + counterMoney + counter}</h3>
-          <h3>
-            <div>
+          <div>
+            <h3>
               Subtotal: $
               {coining * counterCoins +
                 pricing * counter +
                 moneying * counterMoney}
-            </div>
-            <div className="order">
-              <input type="checkbox" name="" id="" />
-              <span> This Order contains a gift</span>
-            </div>
-            <br />
-            <button className="butto">Proceed to buy</button>
-          </h3>
+            </h3>
+          </div>
+          <div className="order">
+            <input type="checkbox" name="" id="" />
+            <span>
+              <h3> This Order contains a gift</h3>
+            </span>
+          </div>
+          <br />
+          <button className="cart_button">Proceed to buy</button>
         </div>
       </div>
       <div className="cart_items">
@@ -49,14 +52,14 @@ function Cart() {
             <div>
               <div className="product_cart">
                 <div className=" border_cart">
-                  <h2>{movie.name}</h2>
                   <img className="imagess" src={movie.img} alt="" />
+                  <h2>{movie.name}</h2>
                   <strong>
                     <p>Price : ${pricing * counter}</p>
                   </strong>
-                  <div className="components">
+                  <div className="cart_in_button_container">
                     <button
-                      className="in"
+                      className="cart_in_button"
                       onClick={() => {
                         setCounter(counter + 1);
                       }}
@@ -67,10 +70,10 @@ function Cart() {
                       +
                     </button>
                     <strong>
-                      <p>{counter}</p>
+                      <p className="cart_in_counter">{counter}</p>
                     </strong>
                     <button
-                      className="in"
+                      className="cart_in_button"
                       onClick={() => {
                         setCounter(counter - 1);
                       }}
@@ -81,7 +84,7 @@ function Cart() {
                       -
                     </button>
                   </div>
-                  <button className="butto">Buy Now!</button>
+                  <button className="cart_buy_button">Buy Now!</button>
                 </div>
               </div>
             </div>
@@ -94,17 +97,14 @@ function Cart() {
             <div>
               <div className="product_cart">
                 <div className="border_cart">
-                  <h2>{movie.name}</h2>
                   <img className="imagess" src={movie.img} alt="" />
+                  <h2>{movie.name}</h2>
                   <strong>
-                    <p>
-                      {" "}
-                      <p>Price : ${moneying * counterMoney}</p>
-                    </p>
+                    <p>Price : ${moneying * counterMoney}</p>
                   </strong>
-                  <div className="components">
+                  <div className="cart_in_button_container">
                     <button
-                      className="in"
+                      className="cart_in_button"
                       onClick={() => {
                         setCounterMoney(counterMoney + 1);
                       }}
@@ -115,10 +115,10 @@ function Cart() {
                       +
                     </button>
                     <strong>
-                      <p>{counterMoney}</p>
+                      <p className="cart_in_counter">{counterMoney}</p>
                     </strong>
                     <button
-                      className="in"
+                      className="cart_in_button"
                       onClick={() => {
                         setCounterMoney(counterMoney - 1);
                       }}
@@ -129,7 +129,7 @@ function Cart() {
                       -
                     </button>
                   </div>
-                  <button className="butto">Buy Now!</button>
+                  <button className="cart_buy_button">Buy Now!</button>
                 </div>
               </div>
             </div>
@@ -142,14 +142,14 @@ function Cart() {
             <div>
               <div className="product_cart">
                 <div className=" border_cart">
-                  <h2>{movie.name}</h2>
                   <img className="imagess" src={movie.img} alt="" />
+                  <h2>{movie.name}</h2>
                   <strong>
                     <p>Price : ${coining * counterCoins}</p>
                   </strong>
-                  <div className="components">
+                  <div className="cart_in_button_container">
                     <button
-                      className="in"
+                      className="cart_in_button"
                       onClick={() => {
                         setCounterCoins(counterCoins + 1);
                       }}
@@ -160,10 +160,10 @@ function Cart() {
                       +
                     </button>
                     <strong>
-                      <p>{counterCoins}</p>
+                      <p className="cart_in_counter">{counterCoins}</p>
                     </strong>
                     <button
-                      className="in"
+                      className="cart_in_button"
                       onClick={() => {
                         setCounterCoins(counterCoins - 1);
                       }}
@@ -174,7 +174,7 @@ function Cart() {
                       -
                     </button>
                   </div>
-                  <button className="butto">Buy Now!</button>
+                  <button className="cart_buy_button">Buy Now!</button>
                 </div>
               </div>
             </div>

@@ -11,10 +11,13 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Product from "./components/Product";
 import { Context } from "./components/Context";
 import Cart from "./components/Cart";
+import Contentmobile from "./components/Contentmobile";
+import Contentbooks from "./components/Contentbooks";
+import Contentkitchen from "./components/Contentkitchen";
 function App() {
   const movies = [
     {
-      name: "Redmi Note 10",
+      name: "Redmi Note 10 Mobiles",
       img: "https://m.media-amazon.com/images/I/41atHSWSGaL.jpg",
       price: "$160",
       Rating: "⭐⭐⭐⭐⭐",
@@ -44,10 +47,8 @@ function App() {
   const [price, setPrice] = useState(false);
   const [money, setMoney] = useState(false);
   const [coins, setCoins] = useState(false);
-  const [name, setName] = useState(false);
-  const updateName = (event) => {
-    setName(event.target.value);
-  };
+  const [login, setLogin] = useState();
+
   let pricing;
   let moneying;
   let coining;
@@ -67,6 +68,8 @@ function App() {
     <div className="App">
       <Context.Provider
         value={{
+          login,
+          setLogin,
           setCoins,
           coins,
           money,
@@ -89,6 +92,18 @@ function App() {
       >
         <Router>
           <Switch>
+            <Route path="/books-content">
+              <Header />
+              <Contentbooks />
+            </Route>
+            <Route path="/kitchen-content">
+              <Header />
+              <Contentkitchen />
+            </Route>
+            <Route path="/mobile-content">
+              <Header />
+              <Contentmobile />
+            </Route>
             <Route path="/cart">
               <Header />
               <Cart />

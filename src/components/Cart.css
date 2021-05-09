@@ -9,10 +9,6 @@
   margin-top: 4vh;
 }
 
-h2 {
-  font-size: calc(14px + 1vw);
-}
-
 .cart_head_storing {
   display: -ms-grid;
   display: grid;
@@ -24,130 +20,186 @@ h2 {
   width: 80%;
 }
 
-.images {
-  width: 40%;
-  height: 40%;
-}
-
-@media (max-width: 768px) {
-  .images {
-    min-width: 40%;
-    max-width: 50%;
-  }
-}
-
-@media (max-width: 420px) {
-  .images {
-    min-width: 70%;
-    max-width: 80%;
-  }
+.border_cart h2 {
+  font-size: calc(18px + 1.3vw);
+  font-weight: 490;
 }
 
 .border_cart {
   margin-top: 3vh;
   border-bottom: 2px solid #eee;
-  padding-bottom: 2px;
+  padding-bottom: 2vw;
 }
 
 .product_cart {
-  min-height: 80%;
-  max-height: 100%;
-  min-width: 90%;
-  max-width: 100%;
   padding-left: 1vw;
   padding-right: 1vw;
-  padding-top: 2vh;
   padding-bottom: 2vh;
 }
 
-@media (max-width: 768px) {
-  .product_cart {
-    height: 100%;
-    width: 100%;
-    margin-top: 8px;
-  }
-}
-
-@media (max-width: 420px) {
-  .product_cart {
-    margin-bottom: 8vh;
-  }
-}
-
-.product {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (max-width: 768px) {
-  .product {
-    display: -ms-grid;
-    display: grid;
-  }
-}
-
-.butto {
+.cart_buy_button {
   outline: none;
   border: none;
+  width: 50vw;
   font-size: calc(13px + 0.7vw);
   font-weight: 999;
   background-color: #ffe66d;
 }
 
-.butto {
-  text-decoration: none;
-  width: 30vw;
-  padding: 3px;
-  color: black;
-}
-
-@media (max-width: 768px) {
-  .butto {
-    width: 100%;
+@media (max-width: 520px) {
+  .cart_buy_button {
+    width: 60vw;
   }
 }
 
 @media (max-width: 400px) {
-  .butto {
-    width: 100%;
-    margin-bottom: 140px;
-    height: 10vh;
+  .cart_buy_button {
+    width: 70vw;
   }
 }
 
-.components {
+@media (max-width: 330px) {
+  .cart_buy_button {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 280px) {
+  .cart_buy_button {
+    width: 85vw;
+  }
+}
+
+.cart_button {
+  text-decoration: none;
+  width: 30vw;
+  outline: none;
+  border: none;
+  font-size: calc(13px + 0.7vw);
+  font-weight: 999;
+  background-color: #ffe66d;
+  padding: 3px;
+  color: black;
+}
+
+@media (max-width: 820px) {
+  .cart_button {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 620px) {
+  .cart_button {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart_button {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 380px) {
+  .cart_button {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .cart_button {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 280px) {
+  .cart_button {
+    width: 80vw;
+  }
+}
+
+.cart_in_button_container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.in {
-  height: 100%;
-  padding: 4px;
-  width: 100%;
-  font-size: 20px;
-  font-weight: 999;
+.cart_in_counter {
+  padding: 0vw 1vw 0vw 1vw;
+  border: 1px solid #fcbf49;
+  background-color: #ffe66d;
+  height: 4vw;
 }
 
-.imagess {
-  min-width: 40%;
-  max-width: 60%;
-  min-height: 70%;
-  max-height: 80%;
-}
-
-@media (max-width: 420px) {
-  .imagess {
-    min-width: 40%;
-    max-width: 80%;
-    min-height: 30%;
-    max-height: 50%;
+@media (max-width: 870px) {
+  .cart_in_counter {
+    height: 5vw;
   }
 }
 
+@media (max-width: 630px) {
+  .cart_in_counter {
+    height: 6vw;
+  }
+}
+
+@media (max-width: 460px) {
+  .cart_in_counter {
+    height: 7vw;
+  }
+}
+
+@media (max-width: 390px) {
+  .cart_in_counter {
+    height: 9vw;
+  }
+}
+
+.cart_in_button {
+  width: 20vw;
+  background-color: #ffe66d;
+  height: 4vw;
+  font-size: 20px;
+  font-weight: 999;
+  border: 1px solid #fcbf49;
+}
+
+@media (max-width: 870px) {
+  .cart_in_button {
+    height: 5vw;
+  }
+}
+
+@media (max-width: 630px) {
+  .cart_in_button {
+    height: 6vw;
+  }
+}
+
+@media (max-width: 460px) {
+  .cart_in_button {
+    height: 7vw;
+  }
+}
+
+@media (max-width: 390px) {
+  .cart_in_button {
+    height: 9vw;
+  }
+}
+
+.imagess {
+  width: 30vw;
+  margin-top: 2vw;
+}
+
 .order {
-  margin-top: 10vh;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;

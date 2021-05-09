@@ -1,0 +1,22 @@
+.mobile_content {
+  display: grid;
+  place-items: center;
+}
+.mobile_content > h2 {
+  margin-left: 0.3vw;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 2vw;
+  margin-right: 0.3vw;
+}
+.mobile_content > ul {
+  margin-left: -4vw;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+}
+ul > li {
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+.mobile_content > ul > li:hover {
+  color: black;
+}
